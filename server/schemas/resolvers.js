@@ -64,7 +64,9 @@ const resolvers = {
         );
         return updatedUser;
       }
-      throw new AuthenticationError("You need to be logged in to remove a book!");
+      throw new AuthenticationError(
+        "You need to be logged in to remove a book!"
+      );
     },
   },
 };
